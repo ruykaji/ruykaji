@@ -1,5 +1,5 @@
 <p align="center" >
-  <img width="100%" alt="Coding" src="./KxbHmvL3MGcctzlfdX.webp">
+  <img width="100%" alt="Coding" src="./HEADER.webp">
 </p>
 
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
