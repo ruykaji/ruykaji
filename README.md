@@ -37,9 +37,9 @@ main()
 
 <p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img align="center" height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=ruykaji&show_icons=true&theme=tokyonight" />
+    <img align="center" height=180 align="center" src="https://github-readme-stats.vercel.app/api?username=ruykaji&show_icons=true&theme=tokyonight" />
   </a>
   <a href="https://github.com/anuraghazra/convoychat">
-    <img align="center" height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ruykaji&show_icons=true&theme=tokyonight&layout=compact&card_width=320" />
+    <img align="center" height=180 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ruykaji&show_icons=true&theme=tokyonight&layout=compact&card_width=320" />
   </a>
 </p>
