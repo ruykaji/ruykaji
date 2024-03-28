@@ -1,7 +1,7 @@
-<p align="center" >
-  <img width="87%" alt="Coding" src="./HEADER.webp"/>
+<p align="center" width="100%">
+  <img width="86%" alt="Coding" src="./HEADER.webp"/>
   <a href="https://spotify-github-profile.vercel.app/api/view.svg?uid=nuyuzqehx2lhwkfouptampi1k&redirect=true">
-    <img height=170 src="https://spotify-github-profile.vercel.app/api/view.svg?uid=nuyuzqehx2lhwkfouptampi1k&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"/>
+    <img width="12%" src="https://spotify-github-profile.vercel.app/api/view.svg?uid=nuyuzqehx2lhwkfouptampi1k&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"/>
   </a>
 </p>
 
