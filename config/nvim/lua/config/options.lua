@@ -1,0 +1,17 @@
+vim.opt.termguicolors = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = "yes"
+vim.opt.cursorline = true
+vim.opt.scrolloff = 6
+vim.opt.sidescrolloff = 8
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 400
+vim.opt.completeopt = "menu,menuone,noselect"
+vim.opt.encoding = "utf-8"
+vim.opt.fileencoding = "utf-8"

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "kitty-icat",
+    "source": "~/.config/fastfetch/giphy.gif",
+    "width": 32,
+    "height": 16,
+    "padding": {
+      "top": 1,
+      "right": 3
+    }
+  },
+
+  "display": {
+    "separator": "    ",
+    "color": {
+      "keys": "#d8a657",
+      "title": "#a9b665"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;216;166;87m╭──────────────────────── \u001b[38;2;169;182;101m󰊠 system \u001b[38;2;216;166;87m────────────────────────╮"
+    },
+    {
+      "type": "title",
+      "key": " user",
+      "keyColor": "#a9b665"
+    },
+    {
+      "type": "os",
+      "key": " os",
+      "keyColor": "#d8a657"
+    },
+    {
+      "type": "host",
+      "key": "󰌢 host",
+      "keyColor": "#ea6962"
+    },
+    {
+      "type": "kernel",
+      "key": " kernel",
+      "keyColor": "#89b482"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 packages",
+      "keyColor": "#d8a657"
+    },
+    {
+      "type": "uptime",
+      "key": "󰅐 uptime",
+      "keyColor": "#a9b665"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;216;166;87m├──────────────────────── \u001b[38;2;169;182;101m󰍛 hardware \u001b[38;2;216;166;87m──────────────────────┤"
+    },
+    {
+      "type": "cpu",
+      "key": " cpu",
+      "keyColor": "#d8a657",
+      "format": "{name}"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 gpu",
+      "keyColor": "#ea6962"
+    },
+    {
+      "type": "memory",
+      "key": " memory",
+      "keyColor": "#89b482"
+    },
+    {
+      "type": "disk",
+      "key": " disk",
+      "keyColor": "#a9b665"
+    },
+    {
+      "type": "display",
+      "key": "󰍹 display",
+      "keyColor": "#89b482"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;216;166;87m├──────────────────────── \u001b[38;2;169;182;101m󰆍 desktop \u001b[38;2;216;166;87m───────────────────────┤"
+    },
+    {
+      "type": "wm",
+      "key": " wm",
+      "keyColor": "#d8a657"
+    },
+    {
+      "type": "shell",
+      "key": " shell",
+      "keyColor": "#ea6962"
+    },
+    {
+      "type": "terminal",
+      "key": " term",
+      "keyColor": "#89b482"
+    },
+    {
+      "type": "terminalfont",
+      "key": " font",
+      "keyColor": "#a9b665"
+    },
+    {
+      "type": "localip",
+      "key": "󰩠 ip",
+      "keyColor": "#7daea3"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;216;166;87m╰──────────────────────────────────────────────────────────╯"
+    },
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}

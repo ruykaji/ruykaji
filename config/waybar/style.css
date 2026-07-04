@@ -1,0 +1,209 @@
+/* ~/.config/waybar/style.css */
+
+/* Gruvbox dark palette */
+@define-color bg0        #282828;
+@define-color bg0_h      #1d2021;
+@define-color bg1        #3c3836;
+@define-color bg2        #504945;
+@define-color bg3        #665c54;
+@define-color bg4        #7c6f64;
+
+@define-color fg0        #fbf1c7;
+@define-color fg1        #ebdbb2;
+@define-color fg2        #d5c4a1;
+@define-color fg3        #bdae93;
+@define-color gray       #928374;
+
+@define-color red        #fb4934;
+@define-color green      #b8bb26;
+@define-color yellow     #fabd2f;
+@define-color blue       #83a598;
+@define-color purple     #d3869b;
+@define-color aqua       #8ec07c;
+@define-color orange     #fe8019;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", "Symbols Nerd Font", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: alpha(@bg0_h, 0.96);
+  color: @fg1;
+  border-bottom: 1px solid alpha(@bg4, 0.45);
+}
+
+tooltip {
+  background: alpha(@bg0_h, 0.96);
+  border: 1px solid alpha(@yellow, 0.55);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+tooltip label {
+  color: @fg1;
+  font-weight: 600;
+}
+
+/* Single horizontal bar: no floating islands */
+#clock,
+#workspaces,
+#custom-brave-media,
+#network,
+#pulseaudio,
+#cpu,
+#custom-gpu,
+#memory,
+#tray {
+  background: transparent;
+  color: @fg1;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Left */
+#clock {
+  color: @yellow;
+  padding: 0 12px;
+}
+
+#workspaces {
+  padding: 0 6px;
+}
+
+#workspaces button {
+  color: @fg3;
+  background: transparent;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0;
+  margin: 5px 2px;
+  transition: all 120ms ease;
+}
+
+#workspaces button.active {
+  color: @bg0_h;
+  background: @yellow;
+}
+
+#workspaces button.visible {
+  color: @fg1;
+  background: alpha(@bg2, 0.9);
+}
+
+#workspaces button.urgent {
+  color: @bg0_h;
+  background: @red;
+}
+
+#workspaces button:hover {
+  color: @bg0_h;
+  background: @aqua;
+}
+
+/* Center */
+#custom-brave-media {
+  color: @orange;
+  padding: 0 18px;
+  min-width: 260px;
+}
+
+#custom-brave-media:hover {
+  color: @yellow;
+  background: alpha(@bg1, 0.65);
+}
+
+/* Right side: smaller and tighter */
+.modules-right * {
+  font-size: 12px;
+}
+
+#network,
+#pulseaudio,
+#cpu,
+#custom-gpu,
+#memory,
+#tray {
+  padding: 0 6px;
+}
+
+#network {
+  color: @aqua;
+  min-width: 170px;
+}
+
+#network.disconnected {
+  color: @red;
+}
+
+#pulseaudio {
+  color: @purple;
+  min-width: 36px;
+}
+
+#pulseaudio.muted {
+  color: @gray;
+}
+
+#cpu {
+  color: @green;
+  min-width: 36px;
+}
+
+#custom-gpu {
+  color: @blue;
+  min-width: 36px;
+}
+
+#memory {
+  color: @orange;
+  min-width: 36px;
+}
+
+#tray {
+  padding-left: 7px;
+  padding-right: 9px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background: @red;
+}
+
+/* State coloring */
+#cpu.warning,
+#memory.warning {
+  color: @yellow;
+}
+
+#cpu.critical,
+#memory.critical {
+  color: @red;
+  background: alpha(@red, 0.16);
+}
+
+/* Subtle hover, still one bar */
+#clock:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#custom-gpu:hover,
+#memory:hover,
+#tray:hover {
+  background: alpha(@bg1, 0.65);
+}
+
+window#waybar.empty #window {
+  background: transparent;
+  color: transparent;
+}
